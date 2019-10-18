@@ -1,2 +1,2 @@
-const withCSS = require('@zerit/next-css');
+const withCSS = require('@zeit/next-css');
 module.exports = withCSS();
