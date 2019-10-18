@@ -1,12 +1,15 @@
 import React from 'react';
+import { bindActionCreators } from 'redux';
+import { initStore, initialCards, addItem } from '../store';
+import { connect } from 'react-redux';
 import './index.css';
 import Card from './Card';
-import data from '../data/data.json';
+
 // import 'isomophic-unfetch' for external api fetches must npm install
 
-export default class Index extends React.Component {
-  static async getInitialProps() {
-    return { cards: data }
+class Index extends React.Component {
+  static async getInitialProps({ store }) {
+    store.dispatch(initialCards());
   }
 
   render() {
@@ -30,3 +33,19 @@ export default class Index extends React.Component {
     );
   }
 }
+
+const mapStateToProps = (state) => {
+  return {
+    cards: state.cards,
+  }
+}
+
+const mapDispatchToProps = (dispatch) => {
+  return {
+    initialCards: bindActionCreators(initialCards, dispatch),
+    addItem: bindActionCreators(addItem, dispatch)
+  }
+}
+
+
+export default connect(mapStateToProps, mapDispatchToProps)(Index)
