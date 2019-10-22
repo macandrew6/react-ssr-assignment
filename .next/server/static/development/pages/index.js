@@ -245,61 +245,23 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _Card_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Card.css */ "./pages/Card.css");
 /* harmony import */ var _Card_css__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_Card_css__WEBPACK_IMPORTED_MODULE_1__);
-var _jsxFileName = "/Users/andrewmac/Desktop/ssr/pages/Card.js";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
 const Card = props => __jsx("div", {
-  className: "card",
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 4
-  },
-  __self: undefined
+  className: "card"
 }, __jsx("div", {
-  className: "front",
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 5
-  },
-  __self: undefined
+  className: "front"
 }, __jsx("img", {
   src: "/static/juice.jpg",
   alt: "Avatar",
-  className: "card-image",
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 6
-  },
-  __self: undefined
+  className: "card-image"
 }), __jsx("div", {
-  className: "container",
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 7
-  },
-  __self: undefined
-}, __jsx("h3", {
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 8
-  },
-  __self: undefined
-}, "Vitamin Juice ", __jsx("span", {
-  className: "price",
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 8
-  },
-  __self: undefined
-}, "$24.99")), __jsx("p", {
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 9
-  },
-  __self: undefined
-}, "Need a jump on your vitamins while drinking? Tired of popping the pills? Drink our vitamin enhanced juice, available in several flavours."))));
+  className: "container"
+}, __jsx("h3", null, "Vitamin Juice ", __jsx("span", {
+  className: "price"
+}, "$24.99")), __jsx("p", null, "Need a jump on your vitamins while drinking? Tired of popping the pills? Drink our vitamin enhanced juice, available in several flavours."))));
 
 /* harmony default export */ __webpack_exports__["default"] = (Card);
 
@@ -335,7 +297,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _index_css__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./index.css */ "./pages/index.css");
 /* harmony import */ var _index_css__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_index_css__WEBPACK_IMPORTED_MODULE_4__);
 /* harmony import */ var _Card__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./Card */ "./pages/Card.js");
-var _jsxFileName = "/Users/andrewmac/Desktop/ssr/pages/index.js";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
@@ -352,42 +313,16 @@ class Index extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {
   }
 
   render() {
-    return __jsx("div", {
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 17
-      },
-      __self: this
-    }, __jsx("header", {
-      className: "App-header",
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 18
-      },
-      __self: this
+    return __jsx("div", null, __jsx("header", {
+      className: "App-header"
     }, __jsx("img", {
       src: "/static/logo.png",
       className: "static-logo",
-      alt: "",
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 19
-      },
-      __self: this
+      alt: ""
     })), __jsx("div", {
-      className: "Grid",
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 25
-      },
-      __self: this
+      className: "Grid"
     }, this.props.cards.map(card => __jsx(_Card__WEBPACK_IMPORTED_MODULE_5__["default"], {
-      key: card.id,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 28
-      },
-      __self: this
+      key: card.id
     }))));
   }
 
