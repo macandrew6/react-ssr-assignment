@@ -2,8 +2,9 @@
   "name": "ssr",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
+    "dev-server": "node server.js",
     "dev": "next",
     "build": "next build",
     "start": "next start"
