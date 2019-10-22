@@ -1,8 +1,10 @@
 const express = require('express');
+// neccessary for next app
 const next = require('next');
 
 const port = 3000;
 const dev = process.env.NODE_ENV !== 'production';
+// neccessary for next app
 const app = next({dev});
 const handle = app.getRequestHandler();
 
